@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\Auth;
 use App\Http\Controllers\API\StoreController;
 use App\Http\Controllers\API\SettingController;
+use App\Http\Controllers\API\ProductController;
 
 
 /*
@@ -25,6 +26,7 @@ Route::middleware('auth:api')->group(function () {
     Route::get('get-user', [Auth::class, 'userInfo']);
     Route::post('store', [StoreController::class, 'store']);
     Route::post('setting', [SettingController::class, 'store']);
+    Route::post('product', [ProductController::class, 'store']);
 });
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
