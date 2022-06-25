@@ -15,6 +15,7 @@ class SettingController extends Controller
         $setting = Setting::create([
             'VAT_included' => $request->VAT_included,
             'VAT' => $request->VAT,
+            'shipping_cost' => $request->shipping_cost,
             'store_id' => $authUser->store_id
         ]);
     

@@ -17,6 +17,7 @@ class CreateSettingsTable extends Migration
             $table->id();
             $table->integer('VAT_included')->default(0); //1 means VAT included in the products price
             $table->integer('VAT')->nullable();
+            $table->integer('shipping_cost');
             $table->integer('store_id')->unique();
             $table->timestamps();
         });

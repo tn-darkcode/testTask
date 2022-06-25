@@ -11,6 +11,7 @@ class Setting extends Model
     protected $fillable = [
         'VAT_included',
         'VAT',
-        'store_id'
+        'store_id',
+        'shipping_cost'
     ];
 }
